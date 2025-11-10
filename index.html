@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BARIGJET Travel Services</title>
+  <meta name="description" content="Explore PNG and beyond with BARIGJET Travel Services. Tours, flights, and custom itineraries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <img src="images/logo.png" alt="BARIGJET Travel Services logo" class="logo">
+      <span class="brand-name">BARIGJET <em>TRAVEL SERVICES</em></span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="title">Explore. Discover. <span class="nowrap">Experience.</span></h1>
+      <p class="subtitle">Curated adventures, local expertise, and hassle‑free planning.</p>
+      <a href="#contact" class="cta">Get Started</a>
+    </div>
+    <img src="images/hero-bg.jpg" alt="Travel background" class="hero-bg" />
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>BARIGJET Travel Services helps you plan meaningful trips across Papua New Guinea and the Pacific—
+      from volcano vistas to rainforest treks and island escapes. Tell us your dream and we’ll craft the itinerary.</p>
+      <ul class="grid">
+        <li><h3>Tours &amp; Activities</h3><p>Hand‑picked guides and cultural experiences.</p></li>
+        <li><h3>Flights &amp; Transfers</h3><p>Door‑to‑door coordination so you can relax.</p></li>
+        <li><h3>Custom Itineraries</h3><p>Tailored to budget, time, and interests.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:hello@BARIGJETtravelServices.com">hello@BARIGJETtravelServices.com</a> or send a quick message below.</p>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="row">
+          <input required name="name" placeholder="Your name" aria-label="Your name">
+          <input required type="email" name="email" placeholder="Email" aria-label="Email">
+        </div>
+        <textarea required name="message" rows="5" placeholder="How can we help?" aria-label="Your message"></textarea>
+        <button type="submit" class="cta">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> BARIGJET Travel Services • <a href="#">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
